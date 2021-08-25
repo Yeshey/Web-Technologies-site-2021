@@ -1,0 +1,113 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/consulta.css">
+  <!-- <link rel="stylesheet" href="qfc-light.css"> -->
+
+</head>
+
+<body>
+<style>
+      .back{
+  font-size: 90px;
+  font-weight: bold;
+  font-family: initial;
+  text-decoration: none;
+  /*background: linear-gradient(to right,white,transparent);*/
+  color:white;
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index: 300;
+  height: 80px;
+  width:40px;
+  display:flex;
+  align-items: center;
+  justify-content:left;
+  padding-left: 10px;
+  transition: 0.2s;
+}
+.back:hover{
+  transform: translateX(-10px);
+  transition: 0.2s;
+}
+.back-in{
+  transform: translateY(-9px);
+
+}
+</style>
+<a href="../home.html" class="back">
+  <div class="back-in">
+    &lsaquo;
+  </div>
+</a>
+  
+  <div class="formularioconsulta">
+    <div class="qfc-container">
+      <h2>Formulário</h2>
+      <label>Preencha o formulário com os seus dados, envie e aguarde o nosso contacto.</label>
+      <form>
+        <div>
+          <div>
+            <input placeholder="Nome Completo" type="text" required>
+        </div>
+        <div>
+          <input placeholder="Idade" type="text" required>
+        </div>
+        <div>
+          <input placeholder="BI/CC" type="text" required>
+        </div>
+        <div>
+          <input placeholder="Morada" type="text" required>
+        </div>
+          <div>
+              <input placeholder="Telefone" type="tel" required>
+          </div>
+          <div>
+              <input placeholder="Email" type="email" required>
+          </div>
+          <div>
+            <label>Género</label>
+            <div>
+              <label>
+                              <input type="radio" name="set_1" required>Masculino
+                          </label>
+            </div>
+            <div>
+              <label>
+                              <input type="radio" name="set_1">Feminino
+                          </label>
+            </div>
+          </div>
+          <div>
+            <label>Médico de família</label>
+            <select id required>
+                          <option disabled selected value="--">Selecionar</option>
+                          <option value="Dr. Mário Santos">Dr. Mário Santos</option>
+                          <option value="Dr. José Veiga">Dr. José Veiga</option>
+                          <option value="Dra. Maria Lopes">Dra. Maria Lopes</option>
+                          <option value="Dra. Joana Melo">Dra. Joana Melo</option>
+              </select>
+          </div>
+          <div>
+            <label>Observações</label>
+            <div>
+              <textarea placeholder="Indique algum aspeto que considere relevante"></textarea>
+            </div>
+          </div>
+          <div>
+            <button type="submit" onclick="registeror(this.form)">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <style>
+  a {
+    color :#00bcd4;
+    text-decoration: none;
+  }
+</style>
+<script src="scripts/consulta.js"></script>
+</html>

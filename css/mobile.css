@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@media all and (max-width: 824px) {
+  .navbar .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .logos img {
+    height: 43px;
+    padding: 0px;
+    text-align: center;
+  }
+  .navbar .logos a {
+    padding: 5px;
+  }
+  main .title {
+    width: 90%;
+  }
+  /*main .quemsomos{
+    height:350px;
+  }*/
+  .papa .tabcontainer {
+    width: 99.5%;
+  }
+  .papa .tabcontainer .flex-container .items {
+    font-size: 14px;
+    margin: auto 0.3%;
+    padding: 15px 1px;
+  }
+  main .title {
+    font-size: 40px;
+  }
+  main [id="1"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main [id="1"] .imagus1 {
+    height: 70vw;
+    padding: 30px;
+  }
+  main .quemsomos .rrr p {
+    font-size: 15px;
+  }
+  main .location p {
+    font-size: 25px;
+  }
+  main .oquefazemos > *:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .oquefazemos > *:nth-child(2) > *:first-child {
+    visibility: hidden;
+    position: absolute;
+  }
+  .navbar .useronpage {
+    opacity: 0.02;
+  }
+  main .oquefazemos > :nth-child(3) .slide img {
+    padding: 0 1%;
+  }
+  /* CONHEÇA A EQUIPA CONHEÇA A EQUIPA */
+  .equipa {
+    /*
+
+      @for $i from 1 through 7 {
+        :nth-child(0n + 1) {
+          order:0;
+        }
+      }*/
+  }
+  .equipa > .oquefazemospa img {
+    height: 60vw;
+    padding: 10px;
+    margin: 0px;
+  }
+  .equipa section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .equipa section h2 {
+    font-size: 25px;
+  }
+  .equipa section p {
+    font-size: 19px;
+  }
+  .equipa section > *:first-child {
+    padding: 0vw 4vw;
+  }
+  .equipa > :nth-child(1) > *:last-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .equipa > :nth-child(2) > *:last-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .equipa > :nth-child(3) > *:last-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .equipa > :nth-child(4) > *:last-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .equipa > :nth-child(5) > *:last-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .equipa > :nth-child(6) > *:last-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .equipa > :nth-child(7) > *:last-child {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  /* CONHEÇA A EQUIPA CONHEÇA A EQUIPA */
+  /*FORMULÁRIO CONSULTA FORMULÁRIO CONSULTA*/
+}
+
+@media all and (max-width: 460px) {
+  .navigation {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: 2px;
+  }
+  main .oquefazemos > :nth-child(3) .navigation {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .papa {
+    top: 77px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  main .quemsomos {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 350px 350px;
+        grid-template-rows: 350px 350px;
+  }
+  main .quemsomos :nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+
+@media all and (max-width: 530px) {
+  main .quemsomos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 350px 350px 350px;
+        grid-template-rows: 350px 350px 350px;
+  }
+  main .quemsomos :nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .quemsomos :nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main .quemsomos :nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .papa .tabcontainer .flex-container .homey {
+    display: none;
+  }
+}
+
+/*
+ @media all and (max-width: 460px){
+  .navigation{
+    bottom: 1px;
+  }
+ }
+ */
+/*# sourceMappingURL=mobile.css.map */

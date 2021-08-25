@@ -1,0 +1,114 @@
+@charset "UTF-8";
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #27190a;
+  font-size: 90%;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Top Bar - Begin*/
+/* Menu */
+/*  .pepe li {
+        padding: 7px 10px;
+        list-style-type: none;}   
+      .pepe {display: flex;}
+      .pepe > *:last-child{margin-left: auto; background-color: saddlebrown;} 
+      #boya {margin-right: auto} 
+    .pepe li:hover {cursor: pointer; color: white; background-color: #8f6e4b;} cursor pointer faz o rato uma mão*/
+/*FRAMEWORKS Bootstrap de CSS e Java-script, Jquery de Java-script(desuso), Vuejs, React*/
+/*Wordpress ou Joomla São CNNS*/
+/*Usar o Inspect no Browser*/
+/*Eles devem usar iframes no site da saúde*/
+.navbar {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*IMPORTANTE*/
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 300;
+  /*To not scroll behind images*/
+  /*border-bottom: 1px solid black; */
+  -webkit-box-shadow: 0px 0px 4px;
+          box-shadow: 0px 0px 4px;
+}
+
+.navbar .logos a {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.navbar .navright {
+  height: 100%;
+  margin-left: auto;
+}
+
+.navbar .navright a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  /*vertical-align: middle;*/
+  padding: 28px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 100%;
+}
+
+.navbar .navright a:hover {
+  background: black;
+  color: #ddd;
+  /*.navbar > *:last-child{margin-left: auto}*/
+}
+
+#sns {
+  max-width: 100%;
+}
+
+#who {
+  max-width: 100%;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("../img/placeholder.jpg");
+  /*Relativamente á pasta css*/
+  min-height: 380px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+  margin: 80px 0px 0px 0px;
+}
+
+.bg-img .container {
+  position: absolute;
+  margin: 50px;
+  width: auto;
+  color: #e3f2ff;
+  border-bottom: 2px solid white;
+  border-radius: 2em;
+}
+
+.navbar2 .container {
+  position: absolute;
+  margin: 50px;
+  width: auto;
+  color: #e3f2ff;
+  border-bottom: 2px solid white;
+  border-radius: 2em;
+}
+/*# sourceMappingURL=style.css.map */

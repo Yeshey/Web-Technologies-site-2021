@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet"> 
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>  <!-- para poder pôr o simbolo de login -->
+
+    <!-- GOOOOOOOOOOOOOOOOOOOGLE CHARTS  -->
+    <!--  FIRST GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['0 - 6', 321],
+          ['7 - 14', 1127],
+          ['15 - 20', 1030],
+          ['19 - 30', 1002],
+          ['31 - 50', 1604],
+          ['51 - 80', 1560],
+          ['81+', 700]
+        ]);
+
+        // Set chart options
+        var options = {'title':'', //Aqui era o titulo - Demográfico dos nossos clientes 
+                       'width':400,
+                       'height':280,backgroundColor: { fill:'transparent' }
+                      };
+                       
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+<!--  SECOND GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+    
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', '');
+        data.addRows([
+          ['Pop. Ativa', 5011],
+          ['Não ativa', 2229],
+          ['Falecida', 1204]
+        ]);
+
+        // Set chart options
+        var options = {'title':'', //Aqui era o titulo Demográfico dos nossos clientes
+                       'width':370,
+                       'height':270,backgroundColor: { fill:'transparent' }
+                      };
+                       
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
+      }
+    </script>
+
+<!--  THIRD GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Em Planeamento familiar', 6000],
+      ['Outras consultas', 7695],
+    ]);
+
+    // Set chart options
+    var options = {'title':'', //Aqui era o titulo - Demográfico dos nossos clientes 
+                   'width':400,
+                   'height':250,backgroundColor: { fill:'transparent' }
+                  };
+                   
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div3'));
+    chart.draw(data, options);
+  }
+</script>
+
+
+<!--  Fourth GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Registada', 1235],
+      ['N/registada', 387]
+    ]);
+
+    // Set chart options
+    var options = {'title':'', //Aqui era o titulo Demográfico dos nossos clientes
+                   'width':370,
+                   'height':270,backgroundColor: { fill:'transparent' }
+                  };
+                   
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div5'));
+    chart.draw(data, options);
+  }
+</script>
+
+<!--  Fifth GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Dr. Mário Santos', 61],
+      ['Dr. José Veiga', 62],
+      ['Dra. Maria Lopes', 59],
+      ['Dra. Joana Melo', 80]
+    ]);
+
+    var options = {
+      title: 'My Daily Activities',backgroundColor: { fill:'transparent' },'width':400,
+                   'height':250,
+      pieHole: 0.4,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+    chart.draw(data, options);
+  }
+</script>
+
+<!--  SIXTH GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', '');
+    data.addRows([
+      ['Muito Bom', 2972],
+      ['Bom', 910],
+      ['Razoável', 618],
+      ['Mau', 98],
+      ['Muito mau', 22]
+    ]);
+
+    // Set chart options
+    var options = {'title':'', //Aqui era o titulo Demográfico dos nossos clientes
+                   'width':370,
+                   'height':270,backgroundColor: { fill:'transparent' }
+                  };
+                   
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div4'));
+    chart.draw(data, options);
+  }
+</script>
+
+
+
+    <!-- GOOOOOOOOOOOOOOOOOOOGLE CHARTS  -->
+
+</head>
+<body>
+  <div class="placeholder"></div>
+  
+    <div class="navbar">  <!--Black one-->
+      <div class="logos">
+        <a href="https://www.sns.gov.pt" target="_blank"><img src="img/sns.png" id="sns"> </img></a>
+        <a href="https://www.who.int" target="_blank"><img src="img/who.png" id="who"> </img></a>
+      </div>
+      <div class="useronpage"></div>
+      <div class="navright">
+  <!--      <a href="#home" class="align">Home</a>
+        <a href="#news" class="align">News</a>
+        <a href="#contact" class="align">Contact</a> -->
+
+        <div>
+          <a href="login/index.html" class="login"><i style='font-size:30px;' class='fas'>&#xf406;</i></a> <!--target="_blank"-->
+          <div class="dropdown-content">
+            <a href="login/index.html">Login</a> <!--target="_blank"-->
+            <a href="login/index.html?id=register">Registar</a> <!--target="_blank"-->
+      <!--      <a href="#">Link 3</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+<!--
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>-->
+
+    <!-- <h1>Titulo 1</h1>   
+    <div class="top">
+        <div class=topimg>
+            <img src="/img/sns.png" id="sns"> </img>
+            <img src="/img/who.png" id="who"> </img>
+        </div>
+     <label for="toggle">&#9776;</label> 
+    <a href="https://www.google.com"><i style='font-size:24px' class='fas'>&#xf406;</i></a> 
+    </div>-->
+
+ 
+
+<!-- <img class="nature" src="img/slideshow/img1.jpg" width="100%">
+<img class="nature" src="img/slideshow/img2.jpg" width="100%">
+<img class="nature" src="img/slideshow/img3.jpg" width="100%"> -->
+
+<div class="slidershow middle">
+
+  <div class="slides">
+    <input type="radio" name="r" id="r1" checked>
+    <input type="radio" name="r" id="r2">
+    <input type="radio" name="r" id="r3">
+    <input type="radio" name="r" id="r4">
+    <input type="radio" name="r" id="r5">
+
+      <div class="slide">
+       <img src="img/slideshow/img1.png">
+     </div>
+      <div class="slide">
+       <img src="img/slideshow/img2.png">
+      </div>
+      <div class="slide">
+       <img src="img/slideshow/img3.png">
+     </div>
+      <div class="slide">
+        <img src="img/slideshow/img4.jpg">
+     </div>
+      <div class="slide">
+        <img src="img/slideshow/img5.jpg">
+     </div>
+    
+  </div>
+    <div class="navigation">
+      <label for="r1" class="bar"></label>
+      <label for="r2" class="bar"></label>
+      <label for="r3" class="bar"></label>
+      <label for="r4" class="bar"></label>
+      <label for="r5" class="bar"></label>
+    </div>
+</div>
+
+<div class="papa">
+<div class="tabcontainer">
+  <div class="flex-container" id="nav">
+      <a href="home.html" class="homey"><i class="fa fa-home" aria-hidden="true"></i></a>
+
+      <a class="current items" href="#1">Quem somos</a>
+
+      <a href="#2" class="items">O que Fazemos</a>
+
+      <a href="#3" class="items">Indicadores</a>
+
+      <a href="#4" class="items">Recursos</a>
+
+      <a href="#5" class="items">Mais Apoio</a>
+
+  </div>
+</div>
+</div>
+
+
+<!-------------------------------------------------------->
+<!--<main>
+  <section id="1" class="quemsomos">
+    <div class="quemsomos-content">
+        <h2><span class="text">The History</span> Of Our Hotel</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing 
+        </p>
+        <a href="about.html" class="btn">Read More</a>
+    </div>
+    <div class="quemsomos-img"> <img class="imagus" src=""></img> </div>
+  </section>
+
+
+
+ <section id="home_info" class="bg-dark">
+     <div class="info-img"></div>
+     <div class="info-content">
+         <h2><span class="text-primary">The History</span> Of Our Hotel</h2>
+         <p>
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+             aliquam dolor alias iste autem, quaerat magni unde accusantium qui
+             fuga placeat quidem quo pariatur, voluptatum, ea sequi? Corporis,
+             explicabo quisquam dolor placeat praesentium nesciunt mollitia quos
+             nobis natus voluptatum asperiores!
+         </p>
+         <a href="about.html" class="btn btn-light">Read More</a>
+     </div>
+ </section>
+ <section id="features">
+     <div class="box bg-light">
+         <i class="fas fa-hotel fa-3x"></i>
+         <h3>Great Location</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eos.</p>
+     </div>
+     <div class="box bg-primary">
+         <i class="fas fa-utensils fa-3x"></i>
+         <h3>Free Meals</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eos.</p>
+     </div>
+     <div class="box">
+         <i class="fas fa-dumbbell fa-3x"></i>
+         <h3>Fitness Room</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eos.</p>
+     </div>
+ </section>
+ <div class="clr"></div>
+ <footer id="main-footer">
+     <p>Hotel JH &copy; 2019, All Rights Reserved</p>
+ </footer>
+
+ </main>   
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+      <p>Some text some text some text some text..</p><br>
+   
+-->
+<main>
+
+  <div class="title">USF Aldeia dos Bois</div>
+<!-- QUEMSOMOSQUEMSOMOSQUEMSOMOSQUEMSOMOS -->
+<section id="1">
+  <div class="quemsomos-content">
+      <h2><span class="text1">Quem Somos</span></h2>
+      <p>
+          A nossa equipa é formada pelas mentes mais inovadoras de toda esta área.<br>
+          O centro de saúde da Aldeia dos Bois foi concebido com o nosso pessoal em mente visando prestar com excepção os serviços que são esperados de nós.<br>
+          <b>Horário:</b> Abertos 24horas por dia! Telefone!
+      </p>
+      <div><a href="equipa.html" class="btn">Conheça a equipa</a></div>
+  </div>
+  <div> <img class="imagus1" src="img/quemsomos.jpg"></img> </div>
+</section>
+<section class="quemsomos">
+  <div class="rrr">
+    <div class="imhungry">
+      <span class="mvv">
+        Missão
+      </span>
+      <img src="img/mvv/mission.svg" alt="">
+    </div>
+    <p>
+      <!--Visamos tocar as pessoas-->
+      A USF-AN tem o papel de representação das USF, fomenta a partilha de conhecimento e o desenvolvimento de equipas autónomas e responsáveis, incentiva a capacitação dos utentes, para uma prestação de Cuidados de Saúde Primários de qualidade.
+    </p>
+  </div>
+    <div class="rrr">
+      <div class="imhungry">
+        <span class="mvv">Valores</span>
+        <img src="img/mvv/values.svg" alt="">
+      </div>
+
+      <div class="depressing">
+        <div title="Informação, comunicação, decisões partilhadas, prestação de contas à comunidade" class="textomeu">
+          Transparência
+        </div>
+        <div title="Multidisciplinaridade, aceitação da diferença" class="textomeu">
+          Diversidade
+        </div>
+        <div title="Criatividade, empreendedorismo, novos serviços, novas práticas" class="textomeu">
+          Inovação
+        </div>
+        <div title="Partilha, compromisso, trabalho em rede" class="textomeu">
+          Cooperação
+        </div>
+        <div title="Boas práticas, rigor, avaliação" class="textomeu">
+          Qualidade
+        </div>
+      </div>
+
+    </div>
+  <div class="rrr"> <!--Third child-->
+    <div class="imhungry">
+      <span class="mvv">Visão</span><img src="img/mvv/vision.svg" alt="">
+    </div>
+    <p>
+      Ser a Entidade Social que representa as equipas da rede de Cuidados de Saúde Primários, contribuindo para uma sociedade de bem-estar, de pessoas felizes e comunidades saudáveis.
+      <!--https://www.usf-an.pt/sobre/missao-visao-e-valores/ -->
+    </p>
+  </div>
+  <div class="contacte">
+    <span>Tem dúvidas, reclamações ou sugestões?</span>
+    <br>
+    <a href="#contacte">Contacte-nos!</a>
+  </div>
+</section>
+<section class="location">
+  <p>Encontre-nos!</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1520.8397962699573!2d-7.686628341849584!3d40.32726799484386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE5JzM4LjIiTiA3wrA0MScwNy45Ilc!5e0!3m2!1sen!2spt!4v1609723715101!5m2!1sen!2spt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+  <!-- <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-7.689193767493625%2C40.325232562387676%2C-7.684355062430758%2C40.32800126184237&amp;layer=hot&amp;marker=40.326616926311324%2C-7.686774414962201" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=40.32662&amp;mlon=-7.68677#map=18/40.32662/-7.68677&amp;layers=H">View Larger Map</a></small> -->
+</section>
+<!-- QUEMSOMOSQUEMSOMOSQUEMSOMOSQUEMSOMOS -->
+
+<!-- OQUEFAZEMOSOQUEFAZEMOSOQUEFAZEMOS -->
+<section class="oquefazemos">
+  <section>
+    <div><span> <!--O que fazemos--></span></div>
+  </section>
+  <section id="2">
+    <div> <img class="imagus1" src="img/Logo.png"></img> </div>
+    <div class="quemsomos-content">
+      <div class="oquemeudeus"><div><span>O que fazemos</span></div></div>
+        <p>
+          A USF da Aldeia dos Bois está bastante interligada com os seus cidadãos, pelo que investimos e participamos em várias iniciativas pelo bem da nossa comunidade<br>
+        </p>
+        <p>
+          Reveja todas as nossas iniciativas:
+        </p>
+    </div>
+  </section>
+  <section> <!--slideshow-->
+    <div class="slidershow middle">
+
+      <div class="slides">
+        <input type="radio" name="r" id="v1" checked>
+        <input type="radio" name="r" id="v2">
+        <input type="radio" name="r" id="v3">
+        <input type="radio" name="r" id="v4">
+        <input type="radio" name="r" id="v5">
+    
+          <div class="slide">
+           <img src="img/slide2/img1.png">
+         </div>
+          <div class="slide">
+           <img src="img/slide2/img2.png">
+          </div>
+          <div class="slide">
+           <img src="img/slide2/img3.png">
+         </div>
+          <div class="slide">
+            <img src="img/slide2/img4.png">
+         </div>
+          <div class="slide">
+            <img src="img/slide2/img5.png">
+         </div>
+        
+      </div>
+        <div class="navigation">
+          <label for="v1" class="bar"></label>
+          <label for="v2" class="bar"></label>
+          <label for="v3" class="bar"></label>
+          <label for="v4" class="bar"></label>
+          <label for="v5" class="bar"></label>
+        </div>
+    </div>
+  </section>
+  <section> <!--*:nth-child(4)-->
+    <div class="consultas">Consultas:</div>
+    <p>Disponiblizamos flexiblidade nas nossas consultas para que possa sempre ter a melhor experiência possível!<br>
+      <b>Por favor marque consulta através do seguinte formulário:</b>
+    </p>
+    <div class="con-form">
+      <a href="consulta.html">Marque Consulta</a>
+    </div>
+  </section>
+</section>
+<!-- OQUEFAZEMOSOQUEFAZEMOSOQUEFAZEMOS -->
+
+<!-- INDICADORESINDICADORESINDICADORES -->
+<section class="indicadores" id="3">
+  <section> <!--Child 1-->
+    <div><span>Indicadores</span></div>
+  </section>
+  <section> <!--Child 2-->
+    <!--
+    <div>Devem ser disponibilizados alguns indicadores da Unidade de Saúde (ex.:
+      número de utentes por centro de saúde, caracterização dos utentes
+      (idade, sexo), consultas por utente, consultas por especialidade médica,
+      …).<br><br><br>
+      1. Demográfico<br>
+      2. Pirâmide Etária (a dos utentes inscritos na USF)<br>
+      3. Produtividade 4.1 Número médio de consultas em saúde de adultos<br>
+      4. Qualidade técnico-científica - Percentagem de mulheres entre os 50 e 69 anos com mamografia
+      registada nos últimos dois anos<br>
+      5. Efectividade - Percentagem de vacinados por vacinas e por coortes (2 anos, 6 anos,
+      13 anos)
+      <br>
+      6. Eficiência Custo médio de medicamentos, por consulta<br>
+      7. Satisfação</div>
+      -->
+  </section>
+  <section> <!--Child 3-->
+    <div>Mantemo-nos o mais transparentes possível partilhando os nossos dados e objetivos:</div>
+  </section>  
+  <section class="stats"> <!--Child 4-->
+    <div>
+      <div class="indicadores2"> <!--Make spans one for title-->
+            <!--Div that will hold the pie chart-->
+        <span class="re1">
+          Pirâmide Etária (dos inscritos na USF)
+        </span>
+        <span class="re2">
+          <div class="dadamn"><div id="chart_div"></div></div>
+        </span>
+      </div>
+      <div class="indicadores2">
+        <span class="re1">
+          Percentagem de população activa
+        </span>
+        <span class="re2">
+          <div class="dadamn"><div id="chart_div2"></div></div>
+        </span>
+            <!--Div that will hold the pie chart-->
+ 
+      </div>
+      <div class="indicadores2">
+
+        <span class="re1">
+          Número médio de consultas em planeamento familiar
+        </span>
+        <span class="re2">
+          <div class="dadamn"><div id="chart_div3"></div></div>
+        </span>
+
+      </div>
+  </div>
+
+  <div>
+    <div class="indicadores2">
+      
+      <span class="mulheres re1">
+        Percentagem de mulheres entre os 50 e 69 anos com mamografia
+      registada nos últimos dois anos
+      </span>
+      <span class="re2">
+        <div class="dadamn"><div id="chart_div5"></div></div>
+      </span>
+
+    </div>
+    <div class="indicadores2">
+      
+      <span class="re1">
+        Custo médio de medicamentos, por consulta, por médico
+      </span>
+      <span class="re2">
+        <div class="dadamn"><div id="donutchart1"></div></div>
+      </span>
+      
+    </div>
+    <div class="indicadores2">
+      
+      <span class="re1">
+        Satisfação
+      </span>
+      <span class="re2">
+        <div class="dadamn"><div id="chart_div4"></div></div>
+      </span>
+
+    </div>
+  </div>
+  </section>
+</section>
+<!-- INDICADORESINDICADORESINDICADORES -->
+
+<!-- RECURSOSRECURSOSRECURSOSRECURSOS -->
+<section class="recursos" id="4">
+  <section>
+    <span>Recursos</span>
+  </section>
+
+<section>
+  Na USF poderá contar com infraestruturas modernas e adequadas ao tratamento das mais variadas doenças. 
+</section>
+<section>
+  <div class="row">
+    <div class="container">
+      <img src="img/recursos/cirurgia.jpg" style="width:100%">
+      <div class="overlay">
+        <div class="text">Serviço de Cirurgia</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="img/recursos/imagiologia.jpg" style="width:100%">
+      <div class="overlay">
+        <div class="text">Serviço de Imagiologia</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="img/recursos/dentário.jpg" style="width:100%">
+      <div class="overlay">
+        <div class="text">Serviço de Medicina Dentária
+        </div>
+      </div>
+    </div>
+    <div class="container">
+     <img src="img/recursos/recobro.jpg " style="width:100%">
+      <div class="overlay">
+        <div class="text">Serviço de recobro</div>
+      </div>
+    </div>
+  </div> 
+  </section>
+</section>
+<!-- RECURSOSRECURSOSRECURSOSRECURSOS -->
+
+<!-- MAISAPOIOMAISAPOIOMAISAPOIOMAISAPOIO -->
+<section class="mais-apoio" id="5">
+  <section>
+    <span>Mais Apoio</span>
+  </section>
+<div class="emergencia clasbi">
+  <div class="item_header">
+  <h2 class="item_title">Linhas de Emergência e Apoio</h2>
+  </div>
+  <table style="border: 2px solid #0f100f; border-width: 2px;" frame="box" rules="all" cellpadding="2">
+  <tbody>
+  <tr>
+  <td style="border: 1px solid #000000;">Número Europeu de Emergência</td>
+  <td style="border: 1px solid #000000;">112</td>
+  </tr>
+  <tr>
+  <td style="border: 1px solid #000000;">Saúde 24&nbsp;</td>
+  <td style="border: 1px solid #000000;">808 24 24 24</td>
+  </tr>
+  <tr>
+  <td style="border: 1px solid #000000;">Saúde Pública&nbsp;</td>
+  <td style="border: 1px solid #000000;">808 211 311</td>
+  </tr>
+  <tr>
+  <td style="border: 1px solid #000000;">APAV - Associação Portuguesa de Apoio à Vítima &nbsp; &nbsp; &nbsp;</td>
+  <td style="border: 1px solid #000000;">707 200 077</td>
+  </tr>
+  <tr>
+  <td style="border: 1px solid #000000;">SOS Grávida&nbsp;</td>
+  <td style="border: 1px solid #000000;">808 20 11 39</td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
+  <div class="ligacoes clasbi">
+  <div class="item_header2">
+    <h2 class="item_title2">Ligações Úteis</h2>
+  </div>
+  <p>Nacionais</p>
+  <ul>
+  <li><a title="Ministério da Saúde/Portal da Saúde" href="http://www.portaldasaude.pt/" target="_blank">Ministério da Saúde/Portal da Saúde</a></li>
+  <li><a title="Administração Central do Sistema de Saúde, IP" href="http://www.acss.min-saude.pt/" target="_blank">Administração Central do Sistema de Saúde,IP</a></li>
+  <li><a title="Direcção-Geral da Saúde" href="http://www.dgs.pt/" target="_blank">Direcção-Geral da Saúde</a></li>
+  <li><a title="Serviço de Intervenção nos Comportamentos Aditivos e Dependências (SICAD)" href="http://www.sicad.pt/" target="_blank">Serviço de Intervenção nos Comportamentos Aditivos e Dependências (SICAD)</a></li>
+  <li><a title="Entidade Reguladora da Saúde" href="http://www.ers.pt/" target="_blank">Entidade Reguladora da Saúde</a></li>
+  <li><a title="Saúde 24" href="http://www.saude24.pt/" target="_blank">Saúde 24</a></li>
+  <li><span><a title="Comissão de Coordenação e Desenvolvimento Regional do Centro (CCDRC)" href="http://www.ccdrc.pt/" target="_blank"><span>Comissão de Coordenação e Desenvolvimento Regional do Centro (CCDRC)</span></a></span></li>
+  </ul>
+  <p>Internacionais</p>
+  <ul>
+  <li><a title="Organização Mundial da Saúde" href="http://www.who.int/" target="_blank">Organização Mundial da Saúde</a></li>
+  </ul>
+</div>
+
+  <div class="faq clasbi">
+    <div class="item_header3">
+    <h2 class="item_title3">Perguntas Frequentes</h2>
+  </div>		
+  <ul>
+  <li>Como faço para marcar uma consulta?</li>
+  <p>Pode efetuar uma marcação de consulta através do formulário existente no site.</p>
+  <li>O que posso levar para o Internamento?</li>
+  <p>Objetos pessoais (roupa de dormir confortável, chinelos, roupão), livros ou algo que o/a ajude a passar o tempo.
+  <li>Qual o horário para a realização das consultas?</li>
+  <p>De 2ª a Sábado, das 07h30 às 12h00.</p>
+  </ul>
+</div>
+</section>
+
+
+
+	
+
+
+
+
+<!-- MAISAPOIOMAISAPOIOMAISAPOIOMAISAPOIO -->
+
+<section id="contacte">
+  <div class="pop">
+    <span class="tophrase"> Deixe-nos a sua impressão:</span>
+
+    <form id="userform">
+      <br><input placeholder="Nome:" type="text" required><br>
+    
+      <textarea rows="4" cols="50" placeholder="Dúvidas, reclamações ou sugestões..." required></textarea><br>
+      <input type="submit" value="Submeter" onclick="registerpm(this.form)"><br>
+
+    <!--  <select id>
+        <option disabled selected value="--">Select Your City</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Kolkata">Kolkata</option>
+    </select>
+    -->
+    <div style="padding:10px 0px 0px 0px; color:rgb(84, 202, 84);"><b>Email:</b> <a style="padding:10px 0px 0px 0px; color:rgb(84, 202, 84);" href="mailto:a2020144466@isec.pt">a2020144466@isec.pt</a></div>
+    <div style="padding:10px 0px 0px 0px; color:rgb(84, 202, 84);"><b>Ou telefone-nos: <span style="color:black; border-bottom: solid rgb(84, 202, 84); 3px;">112</span></b></div>
+      </form>
+  </div>
+</section>
+</main>
+
+
+      <div class="footer">
+      <!--<p>Footer </p>-->
+        <p>
+          <b style="padding: 10px; font-size:17px;">Templates used:</b><br>
+          <a href="https://github.com/malerey/css-login-form" target="_blank">Login</a><br>
+          <!-- <a href="https://github.com/Shvana/Hotel_Website ">Hotel</a><br> -->
+          <a href="https://github.com/siwalikm/quick-form-css" target="_blank">Form</a><br>
+          <a href="https://youtu.be/9Irz0c-6UGw" target="_blank">slideshow</a><br>
+          <b style="padding: 10px; font-size:17px;">Tutorials:/Guides:</b><br>
+          <a href="https://youtu.be/ZeDP-rzOnAA" target="_blank">Build A Responsive Website With HTML & CSS Tutorial
+          </a><br>
+          <a href="https://www.w3schools.com" target="_blank">w3schools</a><br>
+          <b style="padding: 10px; font-size:17px;">References:</b><br>
+          <a href="https://bicsp.min-saude.pt/pt/biufs/2/20020/2061093/Pages/default.aspx" target="_blank">USF Norton de Matos</a><br>
+          <a href="https://www.sesaram.pt/portal/" target="_blank">Sesaram.pt</a><br>
+          <a href="https://www.usf-an.pt" target="_blank">Unidade de Saúde Familiar  - Associação Nacional</a><br>
+          <!--  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+          <!--   -->
+        </p>
+        <p><b>Trabalho efetuado por: </b><br>
+          João Filipe Almeida - 2020144466<br>
+          Manuel Silva - 2018020427
+        </p>
+      </div>
+
+
+
+      <script>
+/*
+        $('.fullBackground').fullClip({
+     images: ['img/slideshow/img1.jpg', 'img/slideshow/img2.jpg', 'img/slideshow/img3.jpg'],
+       transitionTime: 2000,
+     wait: 5000
+     });
+*/
+     </script>
+  
+  <script type="text/javascript" src="scripts/scrollbar.js"></script>
+  <script type="text/javascript" src="scripts/scrollbar2.js"></script>
+  <script type="text/javascript" src="scripts/slides.js"></script>
+  <script type="text/javascript" src="scripts/user.js"></script>
+</body>
+</html>
